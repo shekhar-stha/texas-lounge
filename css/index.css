@@ -12323,6 +12323,7 @@ nav .nav-link:hover {
   border-radius: 4px;
   z-index: 3;
   margin: 0 !important;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .nav-hero .hero .hero-testimonials .column p {
   text-shadow: none;
