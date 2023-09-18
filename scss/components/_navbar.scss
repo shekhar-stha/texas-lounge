@@ -1,0 +1,35 @@
+nav {
+  background-color: transparent;
+  z-index: 2;
+
+  .navbar-brand {
+    max-width: calc(100% - 5rem);
+    width: 13rem;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .nav-link {
+    color: $primary;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0 1.5rem;
+    z-index: 3;
+    position: relative;
+    border-left: 3px solid transparent;
+    &:hover{
+      border-left: 3px solid $primary;
+      color: $primary;
+    }
+
+    @media (max-width: 1200px) {
+      text-align: center;
+    }
+  }
+
+  .active {
+  }
+}
