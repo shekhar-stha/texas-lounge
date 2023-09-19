@@ -596,7 +596,6 @@
 AOS.init();
 
 
-
 $('.hero-testimonials-slider').slick({
   dots: false,
   infinite: true,
@@ -606,4 +605,30 @@ $('.hero-testimonials-slider').slick({
   slidesToScroll: 1,
   prevArrow: '<i class="fa-solid fa-chevron-left left-arrow"></i>',
   nextArrow: '<i class="fa-solid fa-chevron-right right-arrow"></i>',
+});
+
+$('.home-img-div').slick({
+  autoplay: true,
+  autoplaySpeed: 3000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: false,
+  prevArrow: null,
+  nextArrow: null,
+  // infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear'
+});
+
+$('.testimonials-slider').slick({
+  dots: true,
+  autoplay: true,
+  infinite: true,
+  loop: true,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  prevArrow: null,
+  nextArrow: null,
 });

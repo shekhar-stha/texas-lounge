@@ -1,6 +1,6 @@
 .nav-hero {
     position: relative;
-    // background-color: #e3d7b7;
+    background-color: rgb(227, 215, 183, 0.2);
 
     .circle {
         width: 30rem;
@@ -119,6 +119,7 @@
                 height: 100%;
                 object-fit: cover;
                 z-index: 2;
+                min-height: 600px;
                 max-height: 600px;
                 border-radius: 8px;
 
@@ -146,6 +147,7 @@
                 z-index: 3;
                 margin: 0 !important;
                 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
                 p {
                     text-shadow: none;
                 }
@@ -188,4 +190,296 @@
         }
     }
 
+}
+
+// About Us
+.about-us {
+    .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+        gap: 2rem;
+
+        @media (min-width: 992px) {
+            flex-direction: row;
+        }
+
+        .img-side {
+            width: 100%;
+            max-width: 500px;
+            max-height: 500px;
+            object-fit: cover;
+            object-position: bottom;
+            height: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+
+            @media (max-width:1200px) {
+                height: 700px;
+                max-height: 600px;
+            }
+
+            @media (min-width: 992px) {
+                width: 50%;
+            }
+
+            @media (max-width: 992px) {
+                width: 100%;
+                max-width: 100%;
+                max-height: 400px;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .info-side {
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+
+            .text {
+                padding: 1rem 2rem;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+
+                h2 {
+                    font-size: 1.5rem;
+                    color: $primary;
+                    margin-bottom: 1rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                    color: $dark;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+// Services
+.services {
+    background: $primary;
+
+    padding: 3rem 7rem;
+
+    .header {
+        font-size: 45px;
+        color: #ffffff !important;
+
+        &::after {
+            content: "";
+            position: absolute;
+            background-color: #ffd700;
+            width: 3rem;
+            height: 3px;
+            bottom: -0.5rem;
+            left: 0%;
+        }
+    }
+
+    .header-main {
+        margin-bottom: 3rem;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            background-color: #ffd700;
+            width: 3rem;
+            height: 3px;
+            bottom: -0.5rem;
+            left: 50% !important;
+            transform: translateX(-50%);
+        }
+    }
+
+    .service-flip {
+        .flex {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .service {
+        margin-bottom: 4rem;
+
+        .flex {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            .img-side {
+                width: 100%;
+                max-height: 500px;
+                object-fit: cover;
+                object-position: bottom;
+                height: 100%;
+                border-radius: 8px;
+                overflow: hidden;
+
+                @media (max-width:1200px) {
+                    height: 700px;
+                    max-height: 600px;
+                }
+
+                @media (max-width: 992px) {
+                    width: 100%;
+                    max-width: 100%;
+                    max-height: 400px;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .info-side {
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+                overflow: hidden;
+
+                p {
+                    margin-bottom: 3rem;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+// Testimonials
+.testimonials {
+    position: relative;
+    padding: 5rem 0;
+    background-color: rgb(227, 215, 183, 0.5);
+
+    .bg-img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        object-fit: cover;
+    }
+
+    .testimonial {
+        z-index: 1;
+        text-align: center;
+
+        .quote {
+            font-size: 95px;
+            color: $success;
+        }
+
+        .comment {
+            font-size: 22px;
+            color: #4d4d4d;
+            margin: 3rem 2rem;
+            text-shadow: 0px 0px 1px rgb(0, 0, 0);
+        }
+
+
+        .name {
+            font-size: 23px;
+            font-weight: 600;
+            color: $success;
+            text-shadow: 0 0 2px rgba(63, 62, 62, 0.5);
+        }
+
+
+    }
+
+    .stars {
+        color: #e7ba07;
+        margin: 1rem 0;
+
+        i {
+            font-size: 1.1rem;
+            margin: 0 0.05rem;
+        }
+    }
+}
+
+
+// Lounge Details
+.lounge-details {
+    position: relative;
+    padding: 7rem 3rem;
+
+    .bg-img {
+        position: absolute;
+        z-index: -2;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        filter: brightness(60%);
+    }
+
+    .flex {
+        display: flex;
+        padding: 0rem 7rem;
+
+        .information {
+            width: 40%;
+            background-color: $primary;
+            padding: 2rem;
+
+            .unit {
+                margin-bottom: 1.5rem;
+
+                h5 {
+                    color: $white;
+                    font-family: 'Playfair Display', serif;
+                    font-size: 1.4rem;
+                    margin-bottom: 1rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    position: relative;
+
+                    &::after {
+                        content: "";
+                        width: 3rem;
+                        height: 3px;
+                        background-color: $white;
+                        position: absolute;
+                        bottom: -0.5rem;
+                        left: 0;
+
+                    }
+                }
+
+                p,
+                a {
+                    color: $white;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    text-align: justify;
+                }
+            }
+        }
+
+        .map {
+            width: 60%;
+        }
+    }
 }
