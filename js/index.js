@@ -599,6 +599,7 @@ AOS.init();
 $('.hero-testimonials-slider').slick({
   dots: false,
   infinite: true,
+  autoplay: true,
   loop: true,
   speed: 300,
   slidesToShow: 1,
