@@ -593,7 +593,15 @@
 }));
 
 
-AOS.init();
+AOS.init(
+  {
+    disable: true
+  }
+);
+
+
+
+
 
 
 $('.hero-testimonials-slider').slick({
@@ -634,6 +642,3 @@ $('.testimonials-slider').slick({
   nextArrow: null,
 });
 
-$(document).ready(function() {
-  AOS.init()
-});

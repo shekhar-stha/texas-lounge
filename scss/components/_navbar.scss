@@ -20,7 +20,8 @@ nav {
     z-index: 3;
     position: relative;
     border-left: 3px solid transparent;
-    &:hover{
+
+    &:hover {
       border-left: 3px solid $primary;
       color: $primary;
     }
@@ -30,6 +31,11 @@ nav {
     }
   }
 
-  .active {
+  .active {}
+}
+
+.inner-page {
+  .nav-link {
+    color: #3a3423;
   }
 }

@@ -12089,6 +12089,10 @@ nav .nav-link:hover {
     text-align: center;
   }
 }
+.inner-page .nav-link {
+  color: #3a3423;
+}
+
 .slick-dots {
   display: flex !important;
   justify-content: center;
@@ -12175,6 +12179,10 @@ nav .nav-link:hover {
 }
 .testimonial li.slick-active button {
   background-color: #908053;
+}
+
+.inner-page {
+  background-color: rgba(227, 215, 183, 0.7) !important;
 }
 
 .nav-hero {
@@ -12381,10 +12389,9 @@ nav .nav-link:hover {
 .about-us .flex .img-side {
   width: 100%;
   max-width: 500px;
-  max-height: 500px;
+  height: 500px;
   object-fit: cover;
   object-position: bottom;
-  height: 100%;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -12767,6 +12774,13 @@ footer .column {
 }
 footer .column .footer-logo {
   width: 90%;
+}
+@media (max-width: 768px) {
+  footer .column .footer-logo {
+    width: 100%;
+    max-height: 13rem;
+    margin-bottom: 2rem;
+  }
 }
 footer .column h4, footer .column .h4 {
   font-size: 1.7rem;
