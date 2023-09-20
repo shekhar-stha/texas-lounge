@@ -12260,7 +12260,7 @@ nav .nav-link:hover {
   font-size: 50px;
   margin-bottom: 2.5rem;
   color: #908053;
-  text-shadow: 0 0 1px rgba(61, 64, 52, 0.5);
+  text-shadow: 0 0 2px rgba(61, 64, 52, 0.8);
   z-index: 3;
   font-family: "Playfair Display", serif;
 }
@@ -12281,6 +12281,7 @@ nav .nav-link:hover {
   font-size: 19px;
   color: #212529;
   width: 100%;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.34);
   z-index: 3;
 }
 @media (max-width: 768px) {
