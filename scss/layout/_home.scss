@@ -310,9 +310,11 @@
     .header-main {
         margin-bottom: 3rem;
         position: relative;
+
         @media (max-width: 768px) {
             font-size: 35px;
         }
+
         &::after {
             content: "";
             position: absolute;
@@ -396,11 +398,13 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 3rem;
+
         @media (max-width: 1200px) {
             grid-template-columns: repeat(1, 1fr);
             gap: 2rem;
             padding-bottom: 2rem;
         }
+
         .header-side {
             display: flex;
             flex-direction: column;
@@ -414,8 +418,9 @@
             grid-template-columns: repeat(2, 1fr);
             gap: 2rem;
             padding: 1rem 0;
+
             @media (max-width: 1200px) {
-               padding: 0rem;
+                padding: 0rem;
             }
 
             @media (max-width: 450px) {
@@ -426,19 +431,21 @@
                 border-radius: 12px;
                 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
                 padding: 1rem;
+
                 img {
                     width: 6rem;
                     margin-bottom: 0.5rem;
+                    filter: grayscale(100%);
                 }
 
-                .name{
+                .name {
                     font-size: 18px;
                     font-weight: 500;
                     color: $dark;
                     margin-bottom: 0.5rem;
                 }
 
-                .description{
+                .description {
                     font-size: 16px;
                     color: $info;
                 }
@@ -533,6 +540,7 @@
 .lounge-details {
     position: relative;
     padding: 7rem 3rem;
+
     @media (max-width: 992px) {
         padding: 5rem 0rem;
     }
@@ -568,6 +576,7 @@
             @media (max-width: 768px) {
                 width: 100%;
             }
+
             .unit {
                 margin-bottom: 1.5rem;
 
@@ -604,11 +613,12 @@
 
         .map {
             width: 60%;
+
             @media (max-width: 768px) {
                 width: 100%;
             }
 
-            iframe{
+            iframe {
                 @media (max-width: 768px) {
                     min-height: 400px;
                 }
@@ -617,16 +627,42 @@
     }
 }
 
-footer{
+footer {
     background-color: $primary;
     color: $white;
     padding: 5rem 0 2rem;
 
-    .header{
-        font-size: 35px;
-    }
+    .column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .footer-logo {
+            width: 90%;
+        }
 
-    input,select{
-        height: 3rem;
+        h4{
+            font-size: 1.7rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            position: relative;
+
+            &::after{
+                content: "";
+                position: absolute;
+                width: 3rem;
+                height: 3px;
+                background-color: $white;
+                bottom: -0.8rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        a{
+            display: block;
+            color: $white;
+            font-size: 1.1rem;
+            line-height: 2.5rem;
+        }
     }
 }

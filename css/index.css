@@ -12589,6 +12589,7 @@ nav .nav-link:hover {
 .amenities .flex .box-grid .box img {
   width: 6rem;
   margin-bottom: 0.5rem;
+  filter: grayscale(100%);
 }
 .amenities .flex .box-grid .box .name {
   font-size: 18px;
@@ -12759,11 +12760,35 @@ footer {
   color: #f4f4f3;
   padding: 5rem 0 2rem;
 }
-footer .header {
-  font-size: 35px;
+footer .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-footer input, footer select {
-  height: 3rem;
+footer .column .footer-logo {
+  width: 90%;
+}
+footer .column h4, footer .column .h4 {
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  position: relative;
+}
+footer .column h4::after, footer .column .h4::after {
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: 3px;
+  background-color: #f4f4f3;
+  bottom: -0.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+footer .column a {
+  display: block;
+  color: #f4f4f3;
+  font-size: 1.1rem;
+  line-height: 2.5rem;
 }
 
 .lb-loader,

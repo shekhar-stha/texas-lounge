@@ -633,3 +633,7 @@ $('.testimonials-slider').slick({
   prevArrow: null,
   nextArrow: null,
 });
+
+$(document).ready(function() {
+  AOS.init()
+});
